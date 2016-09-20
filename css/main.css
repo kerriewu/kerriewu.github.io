@@ -369,7 +369,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   height: 99%;
   background-color: rgba(231, 76, 60,.6);
   text-align: center;
-  opacity:0%;
+  opacity:50%;
   filter: alpha(opacity=0);
   -webkit-transition: all 450ms ease-out 0s;
   -moz-transition: all 450ms ease-out 0s;
@@ -390,7 +390,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 }
 .image-overlay .image-link{
   position: relative;
-  top: 20%;
+  top: 50%;
   display: inline-block;
   margin-top: -20px;
 }
