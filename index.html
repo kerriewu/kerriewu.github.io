@@ -311,41 +311,6 @@
                                 <div class="meter emerald">
                                     <span style="width: 50%"><span>Solidworks</span></span>
                                 </div>
-                                <div class="meter carrot">
-                                    <span style="width: 50%"><span>MATLAB</span></span>
-                                </div>
-                                <div class="meter wisteria">
-                                    <span style="width: 75%"><span>Microsoft Office</span></span>
-                                </div>
-                                <div class="meter sunflower">
-                                    <span style="width: 60%"><span>Python</span></span>
-                                </div>
-                                <div class="meter midnight">
-                                    <span style="width: 50%"><span>Java</span></span>
-                                </div>
-                                <div class="meter pomengrate">
-                                    <span style="width: 10%"><span>HTML</span></span>
-                                </div>
-                                <div class="meter asbestos">
-                                    <span style="width: 10%"><span>CSS</span></span>
-                                </div>
-                                <div class="break"></div>
-                                <h5>
-                                    Lab/Hardware
-                                </h5>
-                                <div class="meter emerald">
-                                    <span style="width: 33.3%"><span> Machine Shop Tools</span></span>
-                                </div>
-                                <div class="meter carrot">
-                                    <span style="width: 40%"><span>Prototyping</span></span>
-                                </div>
-                                <div class="meter wisteria">
-                                    <span style="width: 40%"><span>Motion Capture</span></span>
-                                </div>
-                                <div class="meter asbestos">
-                                    <span style="width: 40%"><span>WetLab</span></span>
-                                </div>
-                                <div class="break"></div>
 -->
                             </div>
                         </div>
@@ -470,23 +435,56 @@
                 <div id="individual projects">
                 <!-- ROBOT -->
                 <div id="robot">
-                    <a class="btn close" data-dismiss="modal" href="#portfolio">Back to portfolio</a>
                     <h4 class="modal-title">Remote-controlled robot</h4>
-                    <p>I designed and fabricated an RC robot that lifts two lanterns and hangs them about three feet above ground level.  This robot won the Whitelaw Prize for Originality in Design and qualified for the final tournament with the top 32 scoring robots in a class of 150 students. This robot features an under-actuated three-stage linear lift which picks up two lanterns and also tilts them so that their holes align, allowing them to be placed on a single hook.</p>
-                    
+                    <p>I designed and fabricated an RC robot that lifts two lanterns and hangs them on a hook about three feet above ground level as part of 2.007, MIT's introduction to design and manufacturing class (often known as the root of FIRST robotics). This robot won the Whitelaw Prize for Originality in Design and qualified for the final tournament with the top 32 scoring robots in a class of 150 students. </p>
+                    <p>                        
+                    The task breaks up into two parts: (1) lifting the lanterns and (2) rotating the lanterns such that both of them can hang from the hook at once. To make operation easy and keep everything as simple as possible, I tried to do complete both of these tasks with only one motor. Here's a video of operation (watch all the way until the end to see the rotation!)</p>
+                    <iframe class=g3 height=500 src="https://www.youtube.com/embed/kexPTYyXEx0" frameborder="0" allowfullscreen></iframe>
+                    <p>
+                        <br>
+                    </p>
+                    <p>
+                    Some of the constraints that I worked with included a maximum robot size of 16"x16"x16", a time limit of 1.5 minutes, and a specific set of servos/motors for actuation. 
+                    </p>
+                    <p>
+                    I started off the design process by brainstorming methods of lifting. Feasible options I considered included a scissorlift, multi-stage arms, and a linear lift. Prior class knowledge informed me that scissorlifts were particularly difficult to make stable and actuate effectively, and multi-stage arms seemed like they would involve too many orientation changes, I decided to go with a linear lift. 
                     <br>
+                    <br>
+                    Some preliminary lift designs are below. Since I was having trouble weighing the benefits of more material/stability vs. minimizing machining time and weight, I CADed them out as a quick way of visualizing them with reasonable dimensions. The final lift design I decided to go with is on the right, after getting a feel for the stiffness and weight of the aluminum sheets.
+                    </p>
+                    <img src="../images/liftdesigns.png" alt="" class = g3>
+                    <br>
+                    <br>
+                    <p>
+                        I made sure to reduce friction as much as possible by having no aluminum-aluminum rubbing interfaces, using bushings for the pulleys and interfaces between each lift stage. This also turned out to be a good way of constraining the lifts horizontally relative to each other, since each bushing has a small lip.
+                    </p>
+                    <img src="../images/bushingcloseup.png" alt="" class = g3>
+                    <p>
+                        To rotate the two lanterns without requiring more actuation, I attached the ends of the pulley strings to arms that would rotate the lanterns in the appropriate radii (which I found by measuring the distances between the bottom outer corners of the lanterns in the desired start and end positions, and doing some sketches in Solidworks).
+                        
+                    </p>
+                    <img src="../images/lanterncarriage.png" alt="" class = g3>
+
+                    <br>
+                    <br>
+                    <p>
+                        For the winch, I used a VS-11 servo motor (the highest power motor we had available to us), and delrin spools that I turned. I did a quick torque calculation to figure out the approximate highest efficiency radius.  If I had time, I would probably go back and constrain the winch better, though--it was a little wobbly and probably could have gone faster.
+                    </p>
                     
-                    <p>  Here's a video of operation (watch all the way until the end to see the rotation!)</p>
-                    <iframe width="853" height="480" src="https://www.youtube.com/embed/kexPTYyXEx0" frameborder="0" allowfullscreen></iframe>
+                    <img src="../images/winch.jpg" alt="" class = g3>
                     
+                    <p>
+                        Fabrication-wise, almost all the pieces of my completed robot were made of waterjetted and folded sheet aluminum, or aluminum rods. I controlled it using a PS2 controller and an Arduino Nano. Some photos of the final robot are below. 
+                    </p>
+                    
+                    <img src="../images/robotfront.jpg" alt="" class = g1>
+                    <img src="../images/robotside.jpg" alt="" class = g1>
+                    <img src="../images/robotback.jpg" alt="" class = g1>
                     <a class="btn" data-dismiss="modal" href="#portfolio">Back to portfolio</a>
-                
                 </div>
-                
                 
                 <!-- Pill Bottle -->
                 <div id="pillbottle">
-                    <a class="btn close" data-dismiss="modal" href="#portfolio">Back to portfolio</a>
                     <h4 class="modal-title">Smart Pill Bottle Construction Kit</h4>
                     <p>I designed and wrote code for a “smart pill bottle” kit that modifies a standard pharmacy pill bottle as part of my work at Little Devices. The modified bottle tracks usage data whenever the bottle is opened and closed, and uses either an LED or pager motor as an alarm to remind the user to take a dose at specified times. This kit is intended for use by caregivers and patients who require medication, and for use in educational/outreach contexts.</p>
                     
@@ -502,7 +500,6 @@
 
                 <!-- Rush 2016 -->
                 <div id="rush2016">
-                    <a class="btn close" data-dismiss="modal" href="#portfolio">Back to portfolio</a>
                     <h4 class="modal-title">East Campus Dorm Rush 2016</h4>
                     <p>While not a "project" per se, I put a lot of time and effort into this, and I still want to show off the things we were able to make happen!</p>
                     
@@ -517,7 +514,6 @@
                 
                 <!-- trebuchet -->
                 <div id="trebuchet">
-                    <a class="btn close" data-dismiss="modal" href="#portfolio">Back to portfolio</a>
                     <h4 class="modal-title">Trebuchet/Inverted Swing Ride</h4>
                     <p>For freshman welcome week in August 2015, I co-led construction of a 28-foot trebuchet/inverted swing ride.  We began designing and CADing our design in March, improving off of a previously built version. We built the entire structure in one week, simultaneously teaching newly arrived pre-frosh how to use power tools, and operated it for a week following. </p>
                     
@@ -532,7 +528,6 @@
                 
                 <!-- twitterbot -->
                 <div id="twitterbot">
-                    <a class="btn close" data-dismiss="modal" href="#portfolio">Back to portfolio</a>
                     <h4 class="modal-title">Left Hand Free: A Glove-Powered Twitterbot</h4>
                     <p>We made a prototype of a hand-controlled, wearable twitterbot that would tweet using text based on hand motions. Our prototype generated tweets by using sensors (light, tilt, and flex of the fingers) on the hand as a source of noise. The sensor readings are fed into a Markov chain text generator, based on a trigram model. This project was done in under 24 hours for HackMIT 2015. My team’s code can be seen on github (my username is kerriewu): <a href="https://github.com/asmithh/left-hand-free">link</a>.  A video demo can be found here: <a href="https://youtu.be/Uz7UVIXufCI">link</a>. </p>
                     
@@ -547,7 +542,6 @@
                 
                  <!-- wagon -->
                 <div id="wagon">
-                    <a class="btn close" data-dismiss="modal" href="#portfolio">Back to portfolio</a>
                     <h4 class="modal-title">Covered Wagon</h4>
                     <p>For Campus Preview Weekend, I co-led a seminar teaching visiting freshmen how to use power tools, followed by a fun hands-on project: building a covered wagon. We had a great to getting to know prospective students and also giving them a taste of the building resources/tools available to students in our dorm. After completion, we took the wagon accross campus for a ride (yes, it does roll, thanks to caster wheels). Stay tuned for a video of the trip!</p>
                     
