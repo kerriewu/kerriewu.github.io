@@ -86,6 +86,9 @@
                 <li class='tab' style="display:none;">
                   <a href="#linefollowing"></a>
                 </li>
+                <li class='tab' style="display:none;">
+                  <a href="#paperweight"></a>
+                </li>
             </ul>
           <!-- End Tab List -->
             <div id="tab-data-wrap">
@@ -415,8 +418,27 @@
                             </div>
                             </a>
                         </div>
-                        
+
                         <div class="break"></div>
+                        
+                        <div class="g1">
+                            <a data-toggle="modal" href="#paperweight">
+                            <div class="image">
+                                <img src="../images/paperweight_finished.JPG" alt="">
+                                <div class="image-overlay">
+                                    <br>
+                                    <h4> Paperweight </h4>
+                                    <p>
+                                        A CNC machined paperweight I made with Revanth Damerla for 2.008, a manufacturing class.
+                                    </p>
+                                    
+                                    <div class="image-link">
+                                        <a href="#paperweight" class="btn">More Info</a>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
                         
                         <div class="g1">
                             <a data-toggle="modal" href="#twitterbot">
@@ -677,13 +699,43 @@
                                         
                     <p> Here's a video of our robot making it through some tricky paths to the finish line on competition day. </p>
                     
-                    <video controls="controls" class=g3 name="Trebuchet throwing computer" src="../images/linefollowingrun2.mp4"></video>
+                    <video controls="controls" class=g3 name="Line Following Robot Run" src="../images/linefollowingrun2.mp4"></video>
                     
                     <br>
                     
                     <a class="btn" data-dismiss="modal" href="#portfolio">Back to portfolio</a>
                 
                 </div>    
+                    
+                <div id="paperweight">
+                    <h4 class="modal-title">Paperweight</h4>
+                    <p>Revanth Damerla and I designed and fabricated a paperweight as part of 2.008, our design for manufacturing class. Below is a drawing of our original design. The concept was to have it be a cupholder in addition to a paperweight, with a castle rampart pattern on the rim and a geometric pattern in the cavity.</p>
+                    
+                    <object data="../images/paperweight_drawings.pdf" type="application/pdf" class=g3 height =500px>
+                        <embed src="../images/paperweight_drawings.pdf">
+                        <p>This browser does not support PDFs. Please download the PDF to view it: </p>
+                        <a href="../images/paperweight_drawings.pdf" class="btn">Download PDF</a>
+                    </object>
+                    
+                    <div class="break"></div>
+                                        
+                    <p> Our first step was turning on the CNC lathe, during which we bored out the cavity. We generated our toolpaths on MasterCam. The shop staff also put together a program for turning the bottom face of the paperweight such that it would spin. Here's a video of our two turned parts spinning, and a photo of the bottom face.</p>
+                    
+                    <video controls="controls" class=g1 name="Paperweight spinning" src="../images/paperweight_spin.MOV"></video>
+                    <img src="../images/paperweight_bottom.JPG" alt="" class = g2>
+                    
+                    <div class="break"></div>
+                    
+                    <p> The next step was milling, during we machined the rampart pattern and did the engraving in the center. Unfortunately we had a 15-minute hard limit on the cycle time, so we didn't get to do some parts of the original engraving design. In retrospect we could have optimized the machining of the rampart pattern a little more and skipped the second pass we did for the engraving to save time, and completed the pattern.</p>
+                    
+                    <video controls="controls" class=g2 name="Paperweight CNC Milling" src="../images/paperweight_mill.MOV"></video>
+                    <img src="../images/paperweight_finished.JPG" alt="" class = g1>
+                    
+                    <br>
+                    
+                    <a class="btn" data-dismiss="modal" href="#portfolio">Back to portfolio</a>
+                
+                </div>
                     
                 </div>  
             </div>
