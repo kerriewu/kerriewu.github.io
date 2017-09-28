@@ -170,6 +170,14 @@
                             <ul class="no-list work">
                                 <li>
                                     <h5>
+                                        Controls Intern at Cruise Automation
+                                    </h5><span class="label label-info">June-August 2017</span>
+                                    <p>
+                                        •   Prototype algorithms and bulk data processing scripts for autonomous vehicles.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h5>
                                         Intern at NASA Jet Propulsion Lab
                                     </h5><span class="label label-info">June-August 2016</span>
                                     <p>
@@ -183,7 +191,7 @@
                                         Undergraduate Researcher at Little Devices Lab
                                     </h5><span class="label label-info">October 2015-January 2016</span>
                                     <p>
-                                        •   Prototype and document a do-it-yourself (DIY) usage-tracking/alarmed pill bottle construction set.<br>
+                                        •   Prototype and document a do-it-yourself usage-tracking/alarmed pill bottle construction set.<br>
                                         •   Generate code for running Arduino-based sensors and circuits, such as a tremor sensor and smart pill bottle.<br> 
                                         •   Assist with teaching a hands-on high school workshop on DIY medical technologies, including the DIY pill bottle.
                                     </p>
@@ -193,7 +201,7 @@
                                         Research Intern at Harvard Biodesign Lab
                                     </h5><span class="label label-info">June-August 2015</span>
                                     <p>
-                                        •   Implement, test, and characterize accuracy of algorithms for extracting rehabilitation-relevant gait parameters from inertial measurement unit (IMU) data.<br>
+                                        •   Implement, test, and characterize accuracy of algorithms for extracting rehabilitation-relevant gait parameters from inertial measurement unit data.<br>
                                         •   Prepare technical paper and present project to 40 REU program participants and mentors.<br>
                                         •   Assist with collecting and processing human gait motion capture/force plate data using Vicon and Visual3D.
 
@@ -289,6 +297,8 @@
                                 
                                 <h5> Software/Programming Languages</h5>
                                 <p> Python <br>
+                                    C <br>
+                                    C++ <br>
                                     Java <br>
                                     Solidworks <br>
                                     MATLAB <br>
@@ -297,16 +307,17 @@
                                     Visual3D <br>
                                     Vicon Nexus <br>
                                     Microsoft Office <br>
-                                    HTML
                                 </p>
                                 <div class="break"></div>
                                 <h5> Lab/Hardware</h5>
-                                <p> Machine Shop Tools<br>
+                                <p> Machining <br>
+                                    Rapid prototyping <br>
                                     Electrical Lab Tools<br>
+                                    Hand/power tools<br>
                                     Wetlab <br>
                                     Motion Capture <br>
                                     Working with human subjects <br>
-                                    Prototyping
+                                    
                                 </p>
                                 
                                 <div class="break"></div>
@@ -315,30 +326,27 @@
                                     Relevant Coursework
                                 </h3>
                                 <p> 
+                                    <b>2.750</b>: Medical Device Design (current)
+                                    <b>6.115</b>: Microcomputer Project Laboratory
+                                    <b>2.671</b>: Measurement and Instrumentation (current)
+                                    <b>6.115</b>: Microcomputer Project Laboratory
                                     <b>2.678</b>: Electronics for Mechanical Systems <br>
-                                    <b>2.007</b>: Design and Manufacturing I <br>
-                                    <b>2.008</b>: Design and Manufacturing II (current)<br>
-                                    <b>6.006</b>: Introduction to Algorithms I<br>
-                                    <b>6.046</b>: Design and Analysis of Algorithms (current)<br>
-                                    <b>6.002</b>: Circuits and Electronics <br>
+                                    <b>6.046</b>: Design and Analysis of Algorithms<br>
+                                    <b>6.006</b>: Introduction to Algorithms<br>
+                                    <b>2.004</b>: Controls and Dynamics II <br>
                                     <b>2.003</b>: Controls and Dynamics I <br>
-                                    <b>2.004</b>: Controls and Dynamics II (current) <br>
-                                    <b>2.005</b>: Thermal-Fluids Engineering I (current) <br>
+                                    <b>2.008</b>: Design and Manufacturing II <br>
+                                    <b>2.007</b>: Design and Manufacturing I <br>
+                                    <b>2.006</b>: Thermal-Fluids Engineering II
+                                    <b>2.005</b>: Thermal-Fluids Engineering I <br>
                                     <b>2.001</b>: Mechanics and Materials I <br>
+                                    <b>6.002</b>: Circuits and Electronics <br>
                                     <b>6.005</b>: Elements of Software Engineering <br>
                                     <b>6.004</b>: Computational Architecture <br>
                                     <b>2.086</b>: Numerical Computation for Mechanical Engineering <br>
                                     <b>18.03</b>: Differential Equations <br>
                                     <b>6.01</b>: Introduction to EECS 
                                 </p>
-<!--
-                                <h5>
-                                    Software/Programming Languages
-                                </h5>
-                                <div class="meter emerald">
-                                    <span style="width: 50%"><span>Solidworks</span></span>
-                                </div>
--->
                             </div>
                         </div>
                     </section>
@@ -364,7 +372,7 @@
                                 </div>
                             </a>
                         </div>
-<!--
+
                         <div class="g1">
                         <a data-toggle="modal" href="#pillbottle">
                             <div class="image">
@@ -382,7 +390,6 @@
                             </div>
                             </a>
                         </div>
--->
                         
                         <div class="g1">
                             <a data-toggle="modal" href="#rush2016">
@@ -569,19 +576,15 @@
                 <!-- Pill Bottle -->
                 <div id="pillbottle">
                     <h4 class="modal-title">Smart Pill Bottle Construction Kit</h4>
-<!--
                     <p>I designed a “smart pill bottle” kit that modifies a standard pharmacy pill bottle as part of my work at Little Devices. The modified bottle tracks usage data whenever the bottle is opened and closed, and uses has an alarm to remind the user to take a dose at specified times. This kit is intended for use by caregivers and patients who require medication, and for use in educational/outreach contexts.</p>
                     
-                    <p> The electronics used were TinyCircuits, which are modular Arduino-compatible microcontrollers/accesories. There was already an existing code base for data logging, which I modified to add the alarm and usage sensing capabilities. To give it a completed look, I designed a 3D-printed cap to cover the circuits. Here are some photos of the finished bottle. 
+                    <p> The bottle uses TinyCircuits, which are tiny modular Arduinos. There was already an existing code base for data logging, which I modified to add the alarm and usage sensing capabilities. To give it a completed look, I designed a 3D-printed cap to cover the circuits. Here are some photos of the finished bottle. 
                         
                     </p>
                     
                     <img src="../images/pillbottle2.jpg" alt="" class = g1>
                     <img src="../images/pillbottle4.jpg" alt="" class = g1>
                     <img src="../images/pillbottle3.jpg" alt="" class = g1>
--->
-                    <p>More information is coming soon!
-                    </p>
                     <a class="btn" data-dismiss="modal" href="#portfolio">Back to portfolio</a>
                 
                 </div>
@@ -626,7 +629,7 @@
                 <!-- trebuchet -->
                 <div id="trebuchet">
                     <h4 class="modal-title">Trebuchet/Inverted Swing Ride</h4>
-                    <p>For freshman welcome week in August 2015, I co-led construction of a 28-foot trebuchet/inverted swing ride with my friend Mikael Kalin.  We began designing and CADing in March of that year, improving off of a previously built version. We built the entire structure in one week with the newly arrived pre-frosh, also providing hands-on instruction on power tool use and safety, and operated it for a week following. </p>
+                    <p>For freshman welcome week in August 2015, I co-led construction of a 28-foot trebuchet with my friend Mikael Kalin.  We began designing and CADing in March of that year, improving off of a previously built version. We built the entire structure in one week with the newly arrived pre-frosh, also providing hands-on instruction on power tool use and safety, and operated it for a week following. </p>
                                         
                     <p>Here are a couple photos and a CAD render of the final structure. </p>
                     
@@ -638,7 +641,7 @@
                     
                     <video controls="controls" class=g3 name="Trebuchet throwing computer" src="../images/mickyk-trebuchet.mov"></video>
                     
-                    <p>This ride was last built in 2006 by previous MIT students for freshman orientation week. We looked at photo documentation from the previous ride and replicated the design as a starting point, and then revised to improve its safety/stability. Most notably, we used a larger pipe for the axis of the arm and redesigned the connection from the pipe to the base. We also used bearings, reducing the friction when swinging, and changed the way we loaded counterweights at the bottom of the arm such that it was adjustable in 50-lb increments. </p>
+                    <p>This project was last built in 2006 by previous MIT students for freshman orientation week. We looked at photo documentation from the previous project and replicated the design as a starting point, and then revised to improve its safety/stability. Most notably, we used a larger pipe for the axis of the arm and redesigned the connection from the pipe to the base. We also used bearings, reducing the friction when swinging, and changed the way we loaded counterweights at the bottom of the arm such that it was adjustable in 50-lb increments. </p>
                     
                     
                     <a class="btn" data-dismiss="modal" href="#portfolio">Back to portfolio</a>
@@ -648,12 +651,11 @@
                 <!-- twitterbot -->
                 <div id="twitterbot">
                     <h4 class="modal-title">Left Hand Free: A Glove-Powered Twitterbot</h4>
-                    <p>My HackMIT team and I made a prototype of a hand-controlled, wearable twitterbot that would tweet text based on hand motions. Our prrof-of-concept prototype generated tweets by using sensors (light, tilt, and flex of the fingers) on the hand as a source of noise. The sensor readings are fed into a Markov chain text generator, trained on the texts of <i> Crime and Punishment</i>, <i> The Iliad</i>, an algorithms textbook, Shakespeare's sonnets, and <i> Mean Girls </i>. My team’s code can be seen on github: <b><a href="https://github.com/asmithh/left-hand-free">link</a></b>. If you would like a laugh and don't mind a dash of profanity (thank you, <i> Mean Girls</i>) you can find the generated tweets here: <b><a href= "https://twitter.com/themeanestfrosh">link</a></b>. A video demo can be found here: <b><a href="https://youtu.be/Uz7UVIXufCI">link</a></b>. </p>
+                    <p>My HackMIT team and I made a prototype of a hand-controlled, wearable twitterbot that would tweet based on hand motions. Our proof-of-concept prototype generated tweets by using sensors (light, tilt, and flex of the fingers) on the hand as a source of noise. The sensor readings are fed into a Markov chain text generator, trained on the texts of <i> Crime and Punishment</i>, <i> The Iliad</i>, an algorithms textbook, Shakespeare's sonnets, and <i> Mean Girls </i>. My team’s code can be seen on github: <b><a href="https://github.com/asmithh/left-hand-free">link</a></b>. If you would like a laugh and don't mind a dash of profanity (thank you, <i> Mean Girls</i>) you can find the generated tweets here: <b><a href= "https://twitter.com/themeanestfrosh">link</a></b>. A video demo can be found here: <b><a href="https://youtu.be/Uz7UVIXufCI">link</a></b>. </p>
                     
                     <br>
                     
                     <p> If we had more time, we would have tried correlating movements to specific moods or types of output.</p>
-                    
                     
                     <a class="btn" data-dismiss="modal" href="#portfolio">Back to portfolio</a>
                 
