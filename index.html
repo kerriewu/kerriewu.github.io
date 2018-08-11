@@ -75,13 +75,13 @@
                   <a href="#robot"></a>
                 </li>
                 <li class='tab' style="display:none;">
+                  <a href="#ropes"></a>
+                </li>
+                <li class='tab' style="display:none;">
                   <a href="#pillbottle"></a>
                 </li>
                 <li class='tab' style="display:none;">
                   <a href="#rush2016"></a>
-                </li>
-                <li class='tab' style="display:none;">
-                  <a href="#twitterbot"></a>
                 </li>
                 <li class='tab' style="display:none;">
                   <a href="#wagon"></a>
@@ -417,6 +417,26 @@
                         </div>
 
                         <div class="g1">
+                            <a data-toggle="modal" href="#ropes">
+                                <div class="image">
+                                <img src="../images/rope_testing.JPG" alt="">
+                                <div class="image-overlay">
+                                    <br>
+                                    <h4> Ropes Testing </h4>
+                                    <p>
+                                        Tested the effects of twisting on double-braided nylon rope tensile strength and elastic modulus.
+                                    </p>
+                                    <div class="image-link">
+                                        <a href="#ropes" class="btn">More Info</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="break"></div>
+                        
+                        <div class="g1">
                             <a data-toggle="modal" href="#coaster">
                                 <div class="image">
                                 <img src="../images/coaster_crop.jpg" alt="">
@@ -433,8 +453,6 @@
                                 </div>
                             </a>
                         </div>
-
-                        <div class="break"></div>
                         
                         <div class="g1">
                             <a data-toggle="modal" href="#robot">
@@ -512,25 +530,6 @@
                         </div>
                         
                         <div class="g1">
-                            <a data-toggle="modal" href="#twitterbot">
-                            <div class="image">
-                                <img src="../images/twitterbot.jpg" alt="">
-                                <div class="image-overlay">
-                                    <br>
-                                    <h4> Left Hand Free </h4>
-                                    <p>
-                                        A fun glove-powered twitterbot I prototyped with two friends at HackMIT 2015.
-                                    </p>
-                                    
-                                    <div class="image-link">
-                                        <a href="#twitterbot" class="btn">More Info</a>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-
-                        <div class="g1">
                             <a data-toggle="modal" href="#flashlight">
                             <div class="image">
                                 <img src="../images/flashlight.JPG" alt="">
@@ -546,8 +545,6 @@
                             </div>
                             </a>
                         </div>
-
-                        <div class="break"></div>
                         
                         <div class="g1">
                             <a data-toggle="modal" href="#wagon">
@@ -565,7 +562,9 @@
                             </div>
                             </a>
                         </div>
-                        
+ 
+                        <div class="break"></div>
+
                         <div class="g1">
                             <a data-toggle="modal" href="#linefollowing">
                             <div class="image">
@@ -798,6 +797,42 @@
                     <a class="btn" data-dismiss="modal" href="#portfolio">Back to portfolio</a>
                 </div>
 
+                <div id="ropes">
+                    <h4 class="modal-title">Rope Tensile Testing</h4>
+                    <p> Tested and quatified the tensile strength and elastic modulus of 3/16" diamond-braided nylon rope. This project was done for a measurement and instrumentation course (2.671), where students were asked to choose some quantity to measure.</p>
+                    <p>Using an Instron machine, I tensile tested ropes to failure. Below are my final presentation, paper, and poster for the course.</p>
+                    
+                                        
+                    <p> Poster: </p>
+                    <object data="../images/ropes_poster.pdf" type="application/pdf" class=g3 height = 800>
+                        <embed src="../images/ropes_poster.pdf">
+                        <p>This browser does not support PDFs. Please download the PDF to view it: </p>
+                        <a href="../images/ropes_poster.pdf" class="btn">Download PDF</a>
+                    </object>
+
+                    <div class="break"></div>
+
+                    <p> Paper: </p>
+                    <object data="../images/ropes_paper.pdf" type="application/pdf" class=g3 height = 800>
+                        <embed src="../images/ropes_paper.pdf">
+                        <p>This browser does not support PDFs. Please download the PDF to view it: </p>
+                        <a href="../images/ropes_paper.pdf" class="btn">Download PDF</a>
+                    </object>
+                    
+                    <div class="break"></div>
+
+                    <p> Presentation: </p>
+                    <object data="../images/ropes_presentation.pdf" type="application/pdf" class=g3 height = 800>
+                        <embed src="../images/ropes_presentation.pdf">
+                        <p>This browser does not support PDFs. Please download the PDF to view it: </p>
+                        <a href="../images/ropes_presentation.pdf" class="btn">Download PDF</a>
+                    </object>
+                    
+                    <div class="break"></div>
+
+                    
+                    <a class="btn" data-dismiss="modal" href="#portfolio">Back to portfolio</a>
+                </div>
                     
                 <!-- ROBOT -->
                 <div id="robot">
@@ -901,20 +936,7 @@
                     <a class="btn" data-dismiss="modal" href="#portfolio">Back to portfolio</a>
                 
                 </div>
-                                
-                <!-- twitterbot -->
-                <div id="twitterbot">
-                    <h4 class="modal-title">Left Hand Free: A Glove-Powered Twitterbot</h4>
-                    <p>My HackMIT team and I made a prototype of a hand-controlled, wearable twitterbot that would tweet based on hand motions. Our proof-of-concept prototype generated tweets by using sensors (light, tilt, and flex of the fingers) on the hand as a source of noise. The sensor readings are fed into a Markov chain text generator, trained on the texts of <i> Crime and Punishment</i>, <i> The Iliad</i>, an algorithms textbook, Shakespeare's sonnets, and <i> Mean Girls </i>. My team’s code can be seen on github: <b><a href="https://github.com/asmithh/left-hand-free">link</a></b>. If you would like a laugh and don't mind a dash of profanity (thank you, <i> Mean Girls</i>) you can find the generated tweets here: <b><a href= "https://twitter.com/themeanestfrosh">link</a></b>. A video demo can be found here: <b><a href="https://youtu.be/Uz7UVIXufCI">link</a></b>. </p>
-                    
-                    <br>
-                    
-                    <p> If we had more time, we would have tried correlating movements to specific moods or types of output.</p>
-                    
-                    <a class="btn" data-dismiss="modal" href="#portfolio">Back to portfolio</a>
-                
-                </div>
-                
+                                                
                  <!-- wagon -->
                 <div id="wagon">
                     <h4 class="modal-title">Covered Wagon</h4>
